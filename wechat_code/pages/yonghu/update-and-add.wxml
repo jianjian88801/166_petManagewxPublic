@@ -1,0 +1,51 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">用户账号</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.yonghuzhanghao==true}}"  placeholder="用户账号" model:value="{{yonghuzhanghao}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">用户密码</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.yonghumima==true}}"  placeholder="用户密码" model:value="{{yonghumima}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">用户姓名</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.yonghuxingming==true}}"  placeholder="用户姓名" model:value="{{yonghuxingming}}" />
+    </view>
+<view class="item-box"    bindtap="uploadtouxiang">
+    <view   class="item-label">头像</view>
+    <image  src="{{touxiangPath?touxiangPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+<view class="item-box">
+<view class="item-label" >性别</view>
+<picker   class="down-item-picker"     bindchange="xingbieChange" value="{{xingbieIndex}}"  range="{{xingbieList}}">
+    <view class="down-item-picker-text">
+        {{xingbieIndex||xingbieIndex==0?xingbieList[xingbieIndex]:"请选择性别"}}
+    </view>
+</picker>
+</view>
+    <view class="item-box">
+        <view class="item-label">手机号码</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.shoujihaoma==true}}"  placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

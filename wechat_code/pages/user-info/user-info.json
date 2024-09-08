@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "com-manySel": "/component/com-manySel/com-manySel",
+    "com-edit": "/component/com-editor/com-editor",
+    "com-date": "/component/com-date/com-date"
+  },
+  "navigationBarTitleText": "用户信息",
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white"
+}

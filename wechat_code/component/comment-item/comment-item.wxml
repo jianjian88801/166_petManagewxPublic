@@ -1,0 +1,21 @@
+<view class="comment-item" wx:for="{{treeData}}" wx:key="{{index}}">
+    <view class="username">{{item.username}}</view>
+    <view class="date">{{item.addtime}}</view>
+    <view class="comment-content">
+        <rich-text style=" word-break:break-word" nodes="{{item.content}}"></rich-text>
+        <view style="display: flex;justify-content: space-between;font-size: 24rpx;margin: 20rpx;">
+            <view wx:if="{{editAuth&&curTabName!='messages'}}" data-id="{{item.id}}" style="color: #e54d42;" data-content="{{item.content}}" bind:tap="editTap">修改</view>
+            <view style="background: rgb(135, 153, 163);padding: 10rpx;color: white;margin-top: 20rpx;width: 100%;" wx:if="{{item.reply}}">{{item.reply}}</view>
+            <view wx:if="{{delAuth && userid==item.userid}}" data-id="{{item.id}}" style="color: #e54d42;" bind:tap="delTap">删除</view>
+        </view>
+        <view class="reply" wx:if="{{isreply&&curTabName!='messages'}}" data-id="{{item.id}}" bind:tap="replyTap">回复</view>
+        <view wx:for="{{item.childs}}" wx:for-item="child" wx:for-index="childIndex" wx:key="childindex" >
+            <view class="childs">
+                <view class="childsName">{{child.username}}</view>
+                <rich-text style=" word-break:break-word" nodes="{{child.content}}"></rich-text>
+                <view class="childsDate">{{child.addtime}}</view>
+                <view class="childsreply" wx:if="{{isreply}}" data-id="{{item.id}}" bind:tap="replyTap">回复</view>
+            </view>
+        </view>
+    </view>
+</view>

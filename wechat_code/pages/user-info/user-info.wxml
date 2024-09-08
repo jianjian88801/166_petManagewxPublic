@@ -1,0 +1,83 @@
+<view class="register-container">
+<view class="content">
+<view class="userInfo-from">
+    <!-- yonghuzhanghao，普,去  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yonghu'}}"  >
+        <view class="item-label">用户账号</view>
+        <input  class="item-input" type="text"    disabled="true" placeholder="用户账号" model:value="{{yonghuzhanghao}}" />
+    </view>
+    <!-- yonghuxingming，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yonghu'}}"  >
+        <view class="item-label">用户姓名</view>
+        <input  class="item-input" type="text"    placeholder="用户姓名" model:value="{{yonghuxingming}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='yonghu'}}" >
+        <view  class="item-label"   bindtap="touxiangTap"  >头像</view>
+        <image class="item-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+    </view>
+    <view class="item-box" wx:if="{{tableName=='yonghu'}}">
+        <text   class="item-label"  >性别</text>
+        <picker   class="down-item-picker" mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+            <view class="down-item-picker-text">{{xingbieList[xingbieIndex]}}</view>
+        </picker>
+    </view>
+    <!-- shoujihaoma，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yonghu'}}"  >
+        <view class="item-label">手机号码</view>
+        <input  class="item-input" type="text"    placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+    <!-- jiuzhuzhanzhanghao，普,去  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}"  >
+        <view class="item-label">救助站账号</view>
+        <input  class="item-input" type="text"    disabled="true" placeholder="救助站账号" model:value="{{jiuzhuzhanzhanghao}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}" >
+        <view  class="item-label"   bindtap="tupianTap"  >图片</view>
+        <image class="item-img"   bindtap="tupianTap"   src="{{tempPathtupian}}" mode="aspectFill"></image>
+    </view>
+    <!-- jiuzhuzhanmingcheng，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}"  >
+        <view class="item-label">救助站名称</view>
+        <input  class="item-input" type="text"    placeholder="救助站名称" model:value="{{jiuzhuzhanmingcheng}}" />
+    </view>
+    <!-- lianxidianhua，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}"  >
+        <view class="item-label">联系电话</view>
+        <input  class="item-input" type="text"    placeholder="联系电话" model:value="{{lianxidianhua}}" />
+    </view>
+    <!-- fuzeren，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}"  >
+        <view class="item-label">负责人</view>
+        <input  class="item-input" type="text"    placeholder="负责人" model:value="{{fuzeren}}" />
+    </view>
+    <!-- jiuzhuzhandizhi，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiuzhuzhan'}}"  >
+        <view class="item-label">救助站地址</view>
+        <input  class="item-input" type="text"    placeholder="救助站地址" model:value="{{jiuzhuzhandizhi}}" />
+    </view>
+<view class="btn-box">
+    <button class="save-btn" bindtap="saveTap">保存</button>
+    <button class="quite-btn" bindtap="quitTap">退出登录</button>
+
+</view>
+
+</view>
+
+</view>
+</view>

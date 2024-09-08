@@ -1,0 +1,339 @@
+/* pages/register/register.wxss */
+
+.register-container {
+min-height
+:100vh;
+width
+:100%;
+padding
+:424rpx 44rpx 44rpx 44rpx;
+background
+:url(http://codegen.caihongy.cn/20230815/be5343490bf4412389da1378210fd727.jpg) no-repeat center top / 100%;
+}
+
+.avatar {
+width
+:160rpx;
+margin
+:0;
+border-radius
+:100%;
+object-fit
+:cover;
+display
+:none;
+height
+:160rpx;
+}
+.content {
+padding
+:48rpx 48rpx 24rpx 48rpx;
+box-shadow
+:0px 0px 12rpx #dddddd;
+border-radius
+:16rpx 100rpx;
+background
+:#ffffff;
+display
+:block;
+width
+:100%;
+height
+:auto;
+}
+
+.upload-text{
+border
+:2rpx solid #eeeeee;
+padding
+:0px 24rpx 0 24rpx;
+margin
+:0 0 0px 0;
+color
+:#666666;
+border-radius
+:0px;
+background
+:#ffffff;
+border-width
+:0 0 2rpx 0;
+width
+:100%;
+font-size
+:28rpx;
+height
+:88rpx;
+}
+.upload-img {
+width
+:160rpx;
+border-radius
+:16rpx;
+object-fit
+:contain;
+display
+:block;
+height
+:160rpx;
+}
+.box{
+width
+:100%;
+margin
+:0 0 24rpx 0;
+height
+:auto;
+}
+input{
+width:90%!important;
+border
+:2rpx solid #eeeeee;
+padding
+:0px 24rpx 0 24rpx;
+margin
+:0 0 0px 0;
+color
+:#666666;
+border-radius
+:0px;
+background
+:#ffffff;
+border-width
+:0 0 2rpx 0;
+width
+:100%;
+font-size
+:28rpx;
+height
+:88rpx;
+}
+.select-date{
+
+border
+:2rpx solid #eeeeee;
+
+padding
+:0 20rpx;
+
+margin
+:0 0 24rpx 0;
+
+border-radius
+:0px;
+
+border-width
+:0 0 2rpx 0;
+
+
+height
+:auto;
+}
+.picker-text{
+width
+:100%;
+line-height
+:88rpx;
+font-size
+:28rpx;
+color
+:#666666;
+}
+.register-btn {
+border
+:0;
+padding
+:0 0 0 0;
+margin
+:0 0 24rpx 0;
+color
+:#ffffff;
+border-radius
+:60rpx;
+background
+:#75ebde;
+width
+:100%;
+line-height
+:88rpx;
+font-size
+:32rpx;
+height
+:88rpx;
+}
+.radio-box{
+width
+:100%;
+padding
+:20rpx;
+align-items
+:center;
+display
+:flex;
+}
+
+
+
+.checkbox-box{
+width
+:100%;
+padding
+:20rpx;
+}
+.checkbox-label{
+padding
+:0 0 12rpx 0;
+}
+.checkbox-group-box{
+align-items
+:center;
+display
+:flex;
+}
+.code-box{
+width
+:100%;
+margin
+:0 0 24rpx 0;
+flex-wrap
+:wrap;
+justify-content
+:space-between;
+display
+:flex;
+height
+:auto;
+}
+.send-code-btn {
+border
+:0px solid #eeeeee;
+padding
+:0 0 0 0;
+margin
+:0 0 0 0;
+color
+:#ffffff;
+border-radius
+:60rpx;
+background
+:#75ebde;
+width
+:168rpx;
+line-height
+:88rpx;
+font-size
+:28rpx;
+height
+:88rpx;
+
+}
+.code-input{
+border
+:2rpx solid #eeeeee;
+padding
+:0 24rpx 0 24rpx;
+margin
+:0 0 0 0;
+color
+:#666666;
+border-radius
+:0px;
+background
+:#ffffff;
+border-width
+:0 0 2rpx 0;
+width
+:calc(100% - 188rpx);
+font-size
+:28rpx;
+height
+:88rpx;
+}
+
+.item-box{
+width
+:100%;
+margin
+:0 0 24rpx 0;
+height
+:auto;
+}
+.item-label{
+}
+
+.item-radio-itemBox{
+padding
+:20rpx;
+align-items
+:center;
+border-radius
+:60rpx;
+flex-wrap
+:wrap;
+background
+:none;
+display
+:flex;
+width
+:auto;
+}
+
+.active{
+color
+:#75ebde;
+display
+:inline-block;
+}
+
+
+.radio-itemText{
+color
+:#666666;
+display
+:inline-block;
+}
+
+
+
+
+.checkBox-active{
+color
+:#75ebde;
+}
+.checkBox-itemText{
+color
+:#666666;
+}
+.item-checkbox-itemBox{
+align-items
+:center;
+display
+:flex;
+}
+.item-checkbox-item{
+align-items
+:center;
+margin
+:0 20rpx 0 0;
+display
+:flex;
+}
+checkbox .wx-checkbox-input {
+border
+:2rpx solid #eeeeee;
+border-color
+:#666666;
+border-radius
+:40rpx;
+background
+:#ffffff;
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+border-color
+:#75ebde;
+color
+:#ffffff;
+border-radius
+:40rpx;
+background
+:#75ebde;
+}

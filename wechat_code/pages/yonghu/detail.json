@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "com-video": "/component/com-video/com-video",
+    "com-popup": "/component/com-popup/com-popup"
+  },
+  "navigationBarTitleText": "用户",
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white"
+}

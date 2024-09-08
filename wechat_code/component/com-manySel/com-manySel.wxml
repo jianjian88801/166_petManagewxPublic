@@ -1,0 +1,26 @@
+<view>
+    <view style="height: 0;">
+        <com-popup id="bottomFrame" className="buttom-popup">
+            <view class='my-header'>
+                <view id='oncancle' catchtap='onCancel' class="title-cancle">取消</view>
+                <view class="title-allSelect">
+                    <checkbox-group bindchange="statusChange">
+                        <view class='check-box'>
+                            <checkbox checked="{{isAll}}" />全选
+                        </view>
+                    </checkbox-group>
+                </view>
+                <view id='onConfirm' catchtap='onConfirm' class="title-confirm">确定
+                </view>
+            </view>
+            <scroll-view scroll-y="true" class="popup-content">
+                <checkbox-group bindchange="selChange">
+                    <label class="popup-item" wx:for="{{List}}" wx:key="index">
+                        <text class="checkbox-label">{{item.name}}</text>
+                        <checkbox value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+                    </label>
+                </checkbox-group>
+            </scroll-view>
+        </com-popup>
+    </view>
+</view>

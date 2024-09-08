@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "com-manySel": "/component/com-manySel/com-manySel",
+    "com-edit": "/component/com-editor/com-editor",
+    "com-date": "/component/com-date/com-date"
+  },
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white"
+}

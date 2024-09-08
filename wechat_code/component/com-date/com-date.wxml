@@ -1,0 +1,3 @@
+<view class="select-time">
+    <date-picker bind:datePickerCancellEvent="datePickerCancellEvent" bind:datePickerOkEvent="datePickerOkEvent" isShowDatePicker="{{isShowPicker}}" mode="{{mode}}" data="{{data}}" date="{{dateTime}}"></date-picker>
+</view>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cl.dao.ShenqingruzhuDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.cl.entity.ShenqingruzhuEntity" id="shenqingruzhuMap">
+        <result property="jiuzhuzhanzhanghao" column="jiuzhuzhanzhanghao"/>
+        <result property="tupian" column="tupian"/>
+        <result property="jiuzhuzhanmingcheng" column="jiuzhuzhanmingcheng"/>
+        <result property="lianxidianhua" column="lianxidianhua"/>
+        <result property="fuzeren" column="fuzeren"/>
+        <result property="jiuzhuzhandizhi" column="jiuzhuzhandizhi"/>
+        <result property="shenqingriqi" column="shenqingriqi"/>
+        <result property="yonghuzhanghao" column="yonghuzhanghao"/>
+        <result property="yonghuxingming" column="yonghuxingming"/>
+        <result property="beizhu" column="beizhu"/>
+        <result property="sfsh" column="sfsh"/>
+        <result property="shhf" column="shhf"/>
+    </resultMap>
+
+    <select id="selectListView"
+		resultType="com.cl.entity.view.ShenqingruzhuView" >
+
+		SELECT  shenqingruzhu.* FROM shenqingruzhu  shenqingruzhu 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.cl.entity.view.ShenqingruzhuView" >
+		SELECT * FROM shenqingruzhu  shenqingruzhu <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+</mapper>

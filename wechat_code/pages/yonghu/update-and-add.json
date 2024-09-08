@@ -1,0 +1,10 @@
+
+{
+  "usingComponents": {
+    "com-date": "/component/com-date/com-date",
+    "com-edit": "/component/com-editor/com-editor"
+  },
+  "navigationBarTitleText": "用户",
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white"
+}

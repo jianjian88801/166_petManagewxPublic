@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "tree-menu": "/component/tree-menu/tree-menu"
+    }
+
+}

@@ -1,0 +1,115 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#06988830'   indicator-active-color="#069888"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">救助站账号：</view>
+<view class="detail-item-text">{{detailList.jiuzhuzhanzhanghao}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">图片：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.tupian}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">救助站名称：</view>
+<view class="detail-item-text">{{detailList.jiuzhuzhanmingcheng}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">联系电话：</view>
+<view class="detail-item-text">{{detailList.lianxidianhua}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">负责人：</view>
+<view class="detail-item-text">{{detailList.fuzeren}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">救助站地址：</view>
+<view class="detail-item-text">{{detailList.jiuzhuzhandizhi}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">申请日期：</view>
+<view class="detail-item-text">{{detailList.addtime}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">用户账号：</view>
+<view class="detail-item-text">{{detailList.yonghuzhanghao}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">用户姓名：</view>
+<view class="detail-item-text">{{detailList.yonghuxingming}}</view>
+</view>
+
+
+
+
+
+
+<view class="detail-item-box">
+<view class="detail-item-label">备注</view>
+<view class="detail-item-text">{{detailList.beizhu}}</view>
+</view>
+<view  class="detail-item-box">
+<view class="detail-item-label">审核状态：</view>
+<view wx:if="{{detailList.sfsh=='是'}}" class="text" class="detail-item-text">通过</view>
+<view wx:if="{{detailList.sfsh=='否'}}" class="text" class="detail-item-text">不通过</view>
+<view wx:if="{{detailList.sfsh=='待审核'}}" class="text" class="detail-item-text">待审核</view>
+</view>
+<view class="detail-item-box">
+<view class="detail-item-label">回复内容</view>
+<view class="detail-item-text">{{detailList.shhf}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "申请入驻",
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+
+}

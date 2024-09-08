@@ -1,0 +1,43 @@
+.my-header {
+    justify-content: space-between;
+    font-size: 4.9vw;
+    color: #4a4a4a;
+    display: flex;
+    margin: 20rpx;
+    height: 4vh;
+    align-items: center;
+}
+
+.popup-content {
+    font-size: 4.9vw;
+    display: flex;
+    height: 20vh;
+    overflow: hidden;
+    margin-bottom: 20rpx;
+}
+
+.popup-item {
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 30rpx 20rpx;
+    font-size: 30rpx;
+}
+
+.checkbox-label {
+    box-sizing: border-box;
+    width: 130rpx;
+    margin-right: 32rpx;
+    margin: 20rpx 32rpx 0 0;
+}
+
+.title-cancle,
+.title-allSelect {
+    font-size: 28rpx;
+    color: #000000;
+}
+
+.title-confirm {
+    font-size: 28rpx;
+    color: #4063E7;
+}

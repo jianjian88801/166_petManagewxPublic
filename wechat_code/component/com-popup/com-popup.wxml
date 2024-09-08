@@ -1,0 +1,22 @@
+<view wx:if='{{flag}}'>
+    <view class='wrap {{wrapAnimate}}' style='background:rgba(0,0,0,{{bgOpacity}});'></view>
+    <view class='frame-wrapper {{frameAnimate}}'>
+        <view catchtap='catchNone' class='frame {{frameClass}}'>
+            <!-- 头部 -->
+            <!-- D:\VM-PROJECT\mp-weixin\component\com-icon -->
+            <!-- <view class='my-header'>
+                <view id='oncancle' catchtap='onCancle' class="title-cancle">取消</view>
+                <view class="title-allSelect">
+                    <checkbox-group bindchange="checkboxChange">
+                        <view class='check-box'>
+                            <checkbox checked="{{mycheck}}" />全选
+                        </view>
+                    </checkbox-group>
+                </view>
+                <view id='onConfirm' catchtap='onConfirm' class="title-confirm">确定
+                </view>
+            </view> -->
+            <slot></slot>
+        </view>
+    </view>
+</view>

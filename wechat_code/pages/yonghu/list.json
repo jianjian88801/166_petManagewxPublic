@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "用户",
+  "navigationBarBackgroundColor":"#069888",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+
+}

@@ -1,0 +1,27 @@
+<view class=" treeList c{{step}} {{step==2?'second-box':'list-item'}}"  bind:tap="menuTap" data-item="{{listData}}">
+    <view wx:if="{{step==2}}"  class="list-text">
+        <text class="list-text">{{listData.menu}}</text>
+    </view>
+    <block wx:else="">
+        <!-- 一级菜单 -->
+        <!-- bind:tap="menuTap"  -->
+        <view wx:if="{{listData.child.length>1}}" catchtap="toggleShowChildren" data-item="{{listData}}" style="display: flex;align-items: center;">
+            <slot>
+            </slot>
+            <text class="list-text">{{listData.menu}}</text>
+        </view>
+        <view wx:if="{{listData.child.length==1}}" bind:tap="menuTap" data-item="{{item}}" style="display: flex;align-items: center;" wx:for="{{listData.child}}" wx:key="index">
+            <slot>
+            </slot>
+            <text class="list-text">{{item.menu}}</text>
+        </view>
+
+    </block>
+    <!-- 二级 -->
+    <text wx:if="{{listData.child.length>1}}" class="list-icon" catchtap="toggleShowChildren">{{isShowChildren && listData.child.length>1?'v':'>'}}</text>
+    <!-- 1级 -->
+    <text wx:else="" class="list-icon">{{isShowChildren && listData.child.length>1?'v':'>'}}</text>
+</view>
+<block wx:if="{{listData.child.length>0&&isShowChildren}}" wx:for="{{listData.child}}" wx:key="index">
+    <tree-menu class="second-box" listData="{{item}}" step="{{step+1}}" bindtreeListEvent="treeListEvent"></tree-menu>
+</block>

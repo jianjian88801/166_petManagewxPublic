@@ -1,0 +1,41 @@
+<view class="goodsClassify-container ">
+    <view class="content">
+        <view class="search">
+            <input class="search-input" model:value="{{name}}" type="text" id="" placeholder="名称">
+            <text class="iconfont icon-sousuo4 icons"></text>
+            </input>
+            <view class="searchBtn" bind:tap="search">搜索</view>
+        </view>
+        <view style="display: flex;">
+            <view class="goodsList {{className}}">
+                <view class="goodsList-box">
+                    <view class="goods-item" wx:for="{{goodsListData}}">
+                        <view class="goods-title" data-item="{{item}}" bind:tap="detailBtn">
+                            {{item.name}}
+                        </view>
+                        <image class="goods-img" data-item="{{item}}" bind:tap="detailBtn" src="{{baseURL+item.picture[0]}}" mode="aspectFill" />
+                        <view class="operate-shangpin">
+                            <view style=" display: flex;width:inherit;justify-content: space-between;">
+                                <!-- <view class="edit-box" wx:if="{{editAuth}}">
+                                    <com-icon name="edit" size="20"></com-icon>
+                                    <text data-item="{{item}}"  bind:tap="editBtn" >修改</text>
+                                </view> -->
+                                <!-- <view wx:if="{{delAuth}}" class="delete-box" catchtap="deletetap">
+                                    <com-icon name="delete" size="20" bindtap="deleteBtn"></com-icon>
+                                    <text data-id="{{item.id}}" bind:tap="deleteBtn">删除</text>
+                                </view> -->
+                            </view>
+                        </view>
+                    </view>
+                    <image src="/static/mescroll-totop.png" mode="aspectFill" class="top" bindtap="backToTop" wx:if="{{showToTopButton}}" />
+                    <!-- <view class="add" wx:if="{{addAuth}}" bind:tap="addTap">
+                        新增
+                    </view> -->
+                </view>
+
+            </view>
+
+
+        </view>
+    </view>
+</view>

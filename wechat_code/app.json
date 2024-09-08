@@ -1,0 +1,108 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/forget/forget",
+  "pages/yonghu/register",
+
+    "pages/pay-confirm/pay-confirm",
+    "pages/user-info/user-info",
+    "pages/reply/reply",
+    "component/dateTimePicker/dateTime",
+    "component/com-date/com-date",
+    "component/com-editor/com-editor",
+    "component/comment-item/comment-item",
+    "component/com-popup/com-popup",
+    "component/com-video/com-video",
+    "component/com-manySel/com-manySel",
+    "component/tree-menu/tree-menu",
+    "pages/shop-orders/logistics",
+   "pages/yonghu/detail",
+    "pages/yonghu/update-and-add",
+    "pages/yonghu/list",
+   "pages/chongwufenlei/detail",
+    "pages/chongwufenlei/update-and-add",
+    "pages/chongwufenlei/list",
+   "pages/chongwukepu/detail",
+    "pages/chongwukepu/update-and-add",
+    "pages/chongwukepu/list",
+  "pages/storeup/list",
+   "pages/jiuzhuzhan/detail",
+    "pages/jiuzhuzhan/update-and-add",
+    "pages/jiuzhuzhan/list",
+   "pages/shenqingruzhu/detail",
+    "pages/shenqingruzhu/update-and-add",
+    "pages/shenqingruzhu/list",
+  "pages/forum/forum-add-or-update",
+  "pages/forum/forum-my",
+  "pages/forum/forum-list",
+  "pages/forum/forum-detail",
+  "pages/forum/forum-index",
+   "pages/discusschongwukepu/detail",
+    "pages/discusschongwukepu/update-and-add",
+    "pages/discusschongwukepu/list",
+    "pages/addcomment/addcomment",
+    "pages/center/center"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的"
+    }
+  },
+  "requiredPrivateInfos": [ "getLocation" ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "selectedColor": "#33a3dc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/index.png",
+        "selectedIconPath": "/static/index1.png",
+        "text": "首页"
+      },
+
+
+
+
+  {
+  "pagePath": "pages/chongwukepu/list",
+    "iconPath": "/static/tabs/1/icon1.png",
+    "selectedIconPath": "/static/tabs/1/icon1_act.png",
+      "text": "宠物科普"
+  },
+
+
+  {
+  "pagePath": "pages/jiuzhuzhan/list",
+    "iconPath": "/static/tabs/1/icon2.png",
+    "selectedIconPath": "/static/tabs/1/icon2_act.png",
+      "text": "救助站"
+  },
+
+
+
+{
+  "pagePath": "pages/forum/forum-list",
+  "iconPath": "static/tabs/1/forum.png",
+  "selectedIconPath": "static/tabs/1/forum_act.png",
+  "text": "论坛交流"
+},
+
+
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/1/mine.png",
+        "selectedIconPath": "static/tabs/1/mine1.png",
+        "text": "我的"
+      }
+
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

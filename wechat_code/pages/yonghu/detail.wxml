@@ -1,0 +1,71 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#06988830'   indicator-active-color="#069888"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">用户姓名：</view>
+<view class="detail-item-text">{{detailList.yonghuxingming}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">头像：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.touxiang}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">性别：</view>
+<view class="detail-item-text">{{detailList.xingbie}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">手机号码：</view>
+<view class="detail-item-text">{{detailList.shoujihaoma}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

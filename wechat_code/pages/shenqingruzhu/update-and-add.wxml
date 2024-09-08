@@ -1,0 +1,71 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">救助站账号</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.jiuzhuzhanzhanghao==true}}"  placeholder="救助站账号" model:value="{{jiuzhuzhanzhanghao}}" />
+    </view>
+<view class="item-box"    bindtap="uploadtupian">
+    <view   class="item-label">图片</view>
+    <image  src="{{tupianPath?tupianPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+    <view class="item-box">
+        <view class="item-label">救助站名称</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.jiuzhuzhanmingcheng==true}}"  placeholder="救助站名称" model:value="{{jiuzhuzhanmingcheng}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">联系电话</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.lianxidianhua==true}}"  placeholder="联系电话" model:value="{{lianxidianhua}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">负责人</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.fuzeren==true}}"  placeholder="负责人" model:value="{{fuzeren}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">救助站地址</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.jiuzhuzhandizhi==true}}"  placeholder="救助站地址" model:value="{{jiuzhuzhandizhi}}" />
+    </view>
+    <view class="item-box"  >
+        <view class="item-label">申请日期</view>
+        <view class="down-item-picker"  bindtap="onshenqingriqiTap">
+            <view class="down-item-picker-text">         {{shenqingriqi}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showshenqingriqi}}" bind:dateHandler="shenqingriqiTap"></com-date>
+    <view class="item-box">
+        <view class="item-label">用户账号</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.yonghuzhanghao==true}}"  placeholder="用户账号" model:value="{{yonghuzhanghao}}" />
+    </view>
+    <view class="item-box">
+        <view class="item-label">用户姓名</view>
+        <input  class="item-input"
+type="text"  disabled="{{ro.yonghuxingming==true}}"  placeholder="用户姓名" model:value="{{yonghuxingming}}" />
+    </view>
+
+<view class="item-box"  >
+    <view class="item-label">备注</view>
+
+    <textarea model:value="{{beizhu}}" placeholder="备注"     data-info="{{beizhu}}" maxlength="300" id="beizhu"></textarea>
+</view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

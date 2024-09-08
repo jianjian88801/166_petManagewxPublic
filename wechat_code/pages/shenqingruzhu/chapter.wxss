@@ -1,0 +1,24 @@
+/* pages/newsDetail/newsDetail.wxss */
+.newsDetail-container{
+position: relative;
+padding-bottom: 160rpx;
+}
+.title {
+text-align: center;
+font-size: 30rpx;
+font-weight: 700;
+margin: 20rpx;
+}
+
+.article-content {
+margin-left: 16rpx;
+}
+
+.btn {
+position: fixed;
+/* bottom: 10px; */
+width: 100%;
+display: flex;
+bottom: 0rpx;
+background: #fff;
+}

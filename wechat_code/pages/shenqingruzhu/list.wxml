@@ -1,0 +1,72 @@
+<view class="goodsClassify-container ">
+
+    <view class="content">
+        <view class="list-box">
+
+<view class="search">
+
+<view class="search-inp-box">
+<text class="iconfont icon-sousuo1"></text>
+<input class="search-input" model:value="{{jiuzhuzhanmingcheng}}" type="text" id=""   placeholder="救助站名称" />
+</view>
+<view class="searchBtn"  bind:tap="search"  >搜索</view>
+
+</view>
+
+
+
+            <!-- 列表ok -->
+<view class="categoryFlag-box">
+<view class="goodsList-box">
+    <!-- 样式1,2ok -->
+<view class="goods-item"  bind:tap="detailBtn" data-item="{{item}}"   wx:for="{{goodsListData}}" wx:key="index">
+<image class="goods-img" bind:tap="detailBtn" data-item="{{item}}"  src="{{baseURL+item.tupian}}" mode="aspectFill" />
+<view class="goods-title2-box">
+        <view class="goods-title" bind:tap="detailBtn"  data-tableName="shenqingruzhu"  data-item="{{item}}" >
+救助站名称:{{item.jiuzhuzhanmingcheng}}
+        </view>
+
+        <view class="goods-title" bind:tap="detailBtn"  data-tableName="shenqingruzhu"  data-item="{{item}}" >
+{{item.fuzeren}}
+        </view>
+
+</view>
+    <!-- $column -->
+<view class="operate-box">
+<view  bind:tap="editBtn"  class="edit-box" wx:if="{{editAuth}}">
+<text   class="iconfont icon-xiugai1 edit-icons"></text>
+<text data-id="{{item.id}}" class="edit-text">修改</text>
+</view>
+<view wx:if="{{delAuth}}" class="delete-box" catchtap="deletetap">
+<text   class="iconfont icon-shanchu1 del-icons"></text>
+<text data-id="{{item.id}}" bind:tap="deleteBtn" class="del-text">删除</text>
+</view>
+</view>
+</view>
+    <!-- 样式3ok -->
+
+    <!-- 样式5ok -->
+
+    </view>
+
+
+    <button  class="add-btn" bind:tap="addTap">新增</button>
+
+    <!-- <button  class="add-btn" wx:if="{{addAuth}}" bind:tap="addTap">新增</button> -->
+
+
+
+
+
+
+
+        </view>
+
+
+            <!-- 新闻 -->
+
+
+
+    </view>
+</view>
+</view>

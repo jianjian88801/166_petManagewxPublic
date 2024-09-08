@@ -1,0 +1,11 @@
+<view class="newsDetail-container">
+    <view class="title">{{articleList.chaptertitle}}</view>
+    <view class="article-content">
+        <rich-text nodes="{{articleList.content}}" style="   letter-spacing: 2px; line-height: 50rpx; width: 96vw;" />
+    </view>
+    <view class="btn">
+        <button bindtap="prepClick" type="primary">上一章</button>
+        <button bindtap="backClick" type="warn">目录</button>
+        <button bindtap="nextClick" type="primary">下一章</button>
+    </view>
+</view>

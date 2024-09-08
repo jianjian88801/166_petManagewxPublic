@@ -1,0 +1,157 @@
+.treeList {
+box-sizing: border-box;
+position: relative;
+font-size: 30rpx;
+margin: 20rpx 0;
+}
+
+.line {
+position: absolute;
+height: calc(100% - 30rpx);
+width: 0px;
+border-left: 2rpx dashed #999999;
+left: 20rpx;
+top: 46rpx;
+}
+
+treeList:last-of-type>.treeList>.line {
+display: none;
+}
+
+.title {
+display: flex;
+align-items: center;
+}
+
+.title .icon {
+height: 38rpx;
+width: 38rpx;
+line-height: 38rpx;
+text-align: center;
+margin-right: 10rpx;
+border: 2rpx solid #cccccc;
+color: #cccccc;
+}
+
+.title .icon .dot {
+width: 20rpx;
+height: 20rpx;
+background: #f0f0f0;
+margin: 9rpx 0 0 9rpx;
+border-radius: 50%;
+}
+
+.title text {
+margin-right: 6rpx;
+}
+
+.title text.iconfont {
+font-size: 42rpx;
+}
+
+.title text.icon-tianjia {
+margin-left: 6rpx;
+font-size: 36rpx;
+}
+
+.title .btn {
+padding: 8rpx 20rpx;
+border: 2rpx solid #555555;
+color: #555555;
+font-size: 24rpx;
+margin-left: 4rpx;
+border-radius: 8rpx;
+}
+
+.title .text {
+padding: 6rpx 10rpx;
+border-radius: 10rpx;
+text-align: center;
+box-sizing: border-box;
+}
+
+
+
+/* 组件 */
+
+.list-item{
+border
+:2rpx solid #6fcbcb60;
+padding
+:8rpx 20rpx;
+margin
+:0 0 40rpx 0;
+align-items
+:center;
+text-align
+:center;
+display
+:flex;
+justify-content
+:center;
+border-radius
+:16rpx;
+flex-wrap
+:wrap;
+background
+:#06988810;
+width: 43vw;
+justify-content: space-between!important;
+position
+:relative;
+height
+:136rpx;
+}
+.list-icon{
+color
+:#999999;
+top
+:52rpx;
+width
+:28rpx;
+line-height
+:28rpx;
+font-size
+:28rpx;
+position
+:absolute;
+right
+:20rpx;
+}
+.second-box .list-icon {
+top: 0 !important;
+
+}
+.list-text{
+width
+:100%;
+padding
+:0 20rpx 0 20rpx;
+margin
+:0 0 0 0;
+line-height
+:48rpx;
+font-size
+:28rpx;
+color
+:#333333;
+}
+.second-box{
+width: 43vw;
+padding
+:0px;
+margin
+:0 0 24rpx 0;
+
+justify-content: space-between;
+display: flex;
+align-items: center;
+}
+.list-img{
+color
+:#00babd;
+width
+:64rpx;
+font-size
+:64rpx;
+}

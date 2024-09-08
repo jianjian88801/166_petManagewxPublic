@@ -1,0 +1,54 @@
+.comment-item {
+    padding: 20rpx 40rpx;
+    min-height: 10vh;
+    border: 2rpx solid rgb(238, 238, 238);
+    position: relative;
+    margin: 0 0 34rpx 0;
+
+}
+
+.childs {
+    position: relative;
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+
+.childsreply {
+    color: red;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.reply {
+    color: #e54d42;
+    position: absolute;
+    right: 0;
+    bottom: 20rpx;
+    font-size: 24rpx;
+}
+
+.username {
+    font-size: 34rpx;
+    line-height: 2;
+    color: #000;
+}
+
+.childsDate {
+    font-size: 18rpx;
+    color: rgb(128, 140, 152);
+}
+
+.date {
+    color: rgb(128, 140, 152);
+    font-size: 24rpx;
+}
+
+.comment-content {
+    margin-top: 20rpx;
+}
